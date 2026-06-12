@@ -45,6 +45,9 @@ public class Producto {
     @Column(name = "informacion_adicional", columnDefinition = "TEXT")
     private String informacionAdicional;
 
+    @Column(name = "imagen_url", columnDefinition = "TEXT")
+    private String imagenUrl;
+
     // ==========================================
     // RELACIONES REALES (ESTRATEGIA EFICIENTE)
     // ==========================================
@@ -89,6 +92,8 @@ public class Producto {
     public void setPesoKg(BigDecimal pesoKg) { this.pesoKg = pesoKg; }
     public String getInformacionAdicional() { return informacionAdicional; }
     public void setInformacionAdicional(String informacionAdicional) { this.informacionAdicional = informacionAdicional; }
+    public String getImagenUrl() { return imagenUrl; }
+    public void setImagenUrl(String imagenUrl) { this.imagenUrl = imagenUrl; }
     public Categoria getCategoria() { return categoria; }
     public void setCategoria(Categoria categoria) { this.categoria = categoria; }
     public Material getMaterial() { return material; }
